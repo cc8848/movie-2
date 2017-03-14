@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.objectFactory" value="spring" />
+	<package name="test" extends="struts-default" namespace="/">
+		<action name="testAction" class="movie.action.TestAction">
+		</action>
+	</package>
+	<package name="main" extends="struts-default" namespace="/">
+		<global-results>
+			<result name="index">index.jsp</result>
+		</global-results>
+		<action name="movieAction_*" class="movie.action.MovieAction"
+			method="{1}">
+			<result name="list">list.jsp</result>
+			<result name="movie">movie.jsp</result>
+		</action>
+		<action name="userAction_*" class="movie.action.UserAction"
+			method="{1}">
+		</action>
+	</package>
+	<package name="admin" extends="struts-default" namespace="/">
+		<global-results>
+			<result name="index">index.jsp</result>
+			<result name="add">add.jsp</result>
+		</global-results>
+		<action name="adminAction_*" class="movie.action.AdminAction"
+			method="{1}">
+			<result name="edit">edit.jsp</result>
+		</action>
+	</package>
+</struts>

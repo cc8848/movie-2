@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+main{
+	min-height:350px;
+	font-size:1.6em;
+	background-color:#f0f0f0;
+	}
+main form{padding-top:2em;}
+.title{margin-bottom:1em;}
+.login{
+	background-color:#FFF;
+	border:solid;
+	border-color:#0CF;
+	padding:2em;
+	padding-top:1em;
+	}
+/* *{
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}*/

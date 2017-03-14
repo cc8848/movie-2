@@ -1,0 +1,23 @@
+/* CSS Document */
+/*左边*/
+aside{
+	font-size:1.2em;
+}
+aside li{
+	font-size:1.5em;
+}
+aside li a{
+	color:#333;
+}
+
+/*右边*/
+main{
+	padding:0.5em;
+	background-color:#CCC;
+}
+.thumbnail p{
+  font-size:1.6em;
+}
+footer{
+  margin-top:20px;
+}

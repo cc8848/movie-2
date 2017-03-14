@@ -1,0 +1,39 @@
+/* CSS Document */
+section{
+	padding:2em;
+	border:solid;
+	border-color:#6CF;
+	border-width:thin;
+	}
+.img{
+	width:100%;
+	height:100%;
+	}
+main{
+	background-color:#f0f0f0;
+	padding:15px;
+	margin-top:15px;
+	}
+.moviename,.detail_t{font-size:2em;}
+.detail{font-size:1.5em;}
+.user_name{
+	color:#09C;
+	font-size:18px;
+	}
+.user_comment{font-size:24px;}
+textarea{
+	width:100%;
+	margin:10px auto;
+	height:150px;
+	resize:none;
+}
+.comment{
+	font-size:1.3em;
+	}
+.result{
+	background-color:#FFF;
+	padding:10px;
+	}
+footer{
+  margin-top:20px;
+}

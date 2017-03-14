@@ -1,0 +1,53 @@
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+	background:#eee;
+	font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+	font-size:14px;
+}
+header li{display:inline;}
+nav a:link{text-decoration:none;}
+nav a:hover{background-color:#0FF;}
+/*header部分*/
+header{
+	text-align:center;
+	width:95%;
+	height:160px;
+	margin:0px auto;
+	background-color:#3FF;
+	padding-top:20px;
+	margin-bottom:-14px;
+	}
+.theme{font-size:50px;}
+
+#welcome{
+	float:right;
+	margin-right:50px;
+	font-size:16px;
+	}
+#welcome a{text-decoration:none;}
+nav{
+	padding:10px;
+}
+nav a{
+	color:#FFF;
+	font-size:24px;
+	}
+main{
+	margin-top:35px;
+	background-color:#FFF;
+	}
+.type{min-height:280px;}
+.allimg{
+	width:180px;
+	height:200px;
+}
+.img{padding:15px;}
+.img p{padding-top:10px;}
+.row{text-align:center;
+}
+footer{
+	padding:10px 0;
+	text-align:center;
+}

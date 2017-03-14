@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+	background:#eee;
+	font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+	font-size:14px;
+}
+header{
+	width:95%;
+	height:140px;
+	margin:10px auto;
+	background:#3CF;
+	padding-top:30px;
+}
+
+main{
+	background:#CCC;
+	width:95%;
+	min-height:450px;
+	margin:10px auto;
+	padding-top:30px;
+	}
+header h1{
+	text-align:center;
+	margin:3px auto;
+}
+#welcome{
+	float:right;
+	padding-right:80px;
+	font-size:20px;
+	}
+img{
+	width:300px;
+	height:400px;
+	padding-left:50px;
+	}
+div{
+	float:left;
+	display:inline;
+	}
+.txt{
+	float:left;
+	width:780px;
+	height:500px;
+	padding-left:80px;
+	}
+.p1,.p2{padding-left:80px;}
+.p1{font-size:26px;}
+.play{
+	padding:0;
+	margin:0;
+	width:90px;
+	height:40px;
+}
+textarea{
+	width:100%;
+	margin:10px 0;
+	height:150px;
+	resize:none;
+}
+button{
+	
+	float:right;
+	}
+.comment{
+	background-color:#FFF;
+	padding:20px;
+}
+.com_del{
+	margin-right:15px;
+}
+.com_del a{
+	text-decoration:none;
+	float:right;
+	}
+.user_comment{font-size:24px;}
+.user_name{color:#09C;font-size:18px;}
+hr{
+	width:1250px;
+	height:2px;
+	background-color:#0FF;
+	border:none;
+}
+.hr{
+	clear:both;
+	width:1250px;
+	height:2px;
+	background-color:#FFF;
+	border:none;
+}
+footer{
+	clear:both;
+	width:95%;
+	padding:15px;
+	text-align:center;
+}
