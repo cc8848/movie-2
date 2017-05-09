@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html>
+<xml-body>
+	<validators>
+		<field name="user.account">
+			<field-validator type="requiredstring">
+				<param name="trim">true</param>
+				<message>用户名不能为空</message>
+			</field-validator>
+			<field-validator type="stringlength">
+				<param name="minlength">5</param>
+				<param name="maxlength">9</param>
+				<message>用户名长度应在5到9个字之间</message>
+			</field-validator>
+		</field>
+		<field name="user.password">
+			<field-validator type="requiredstring">
+				<param name="trim">true</param>
+				<message>密码不能为空</message>
+			</field-validator>
+			<field-validator type="stringlength">
+				<param name="minlength">5</param>
+				<param name="maxlength">9</param>
+				<message>密码长度应在5到9个字之间</message>
+			</field-validator>
+		</field>
+	</validators>
+</xml-body>
