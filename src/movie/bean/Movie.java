@@ -32,9 +32,9 @@ public class Movie {
 	/* 播放次数 */
 	private Long count;
 	/* 电影导演 */
-	//private String director;
+	private String director;
 	/* 电影主角 */
-	//private String actors;
+	private String actors;
 	/* 电影类别 */
 	@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	@JoinColumn
@@ -113,7 +113,7 @@ public class Movie {
 		this.count = count;
 	}
 
-	/*public String getDirector() {
+	public String getDirector() {
 		return director;
 	}
 
@@ -127,5 +127,5 @@ public class Movie {
 
 	public void setActors(String actors) {
 		this.actors = actors;
-	}*/
+	}
 }

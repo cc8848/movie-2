@@ -63,15 +63,25 @@
 				<h3>添加电影</h3>
 				<form name="addform" method="post" enctype="multipart/form-data"
 					action="adminAction_addMovie">
-					<label>电影图片：</label><input name="image" type="file"><br>
-					<br> <label>电影名字：</label><input name="movie.name"
-						placeholder="电影名字"><br> <br> <label>导演：</label><input
-						name="movie.director" placeholder="导演"><br> <br>
-					<label>主演：</label><input name="movie.actors" placeholder="主演"><br>
-					<br>
-					<label>电影描述：</label><input name="movie.description"
-						placeholder="电影描述"><br> <br> <label>详情链接：</label><input
-						name="movie.url" placeholder="详情链接"><br> <label>电影分类：</label>
+					<label>电影图片：</label>
+					<input name="image" type="file"><br><br> 
+					
+					<label>电影名字：</label>
+					<input name="movie.name" placeholder="电影名字"><br> <br>
+					 
+					<label>&#12288;&#12288;导演：</label>
+					<input name="movie.director" placeholder="导演"><br> <br>
+					
+					<label>&#12288;&#12288;主演：</label>
+					<input name="movie.actors" placeholder="主演"><br> <br>
+					
+					<label>电影描述：</label>
+					<input name="movie.description" placeholder="电影描述"><br> <br>
+					
+					<label>详情链接：</label>
+					<input name="movie.url" placeholder="详情链接"><br><br>
+					
+					<label>电影分类：</label>
 					<select name="movie.kind.id" required>
 						<option value="1" selected>爱情</option>
 						<option value="2">喜剧</option>

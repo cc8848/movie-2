@@ -72,11 +72,17 @@
 						<label>电影名字：</label>
 						<input name="movie.name" placeholder="电影名字"><br><br> 
 						
+						<label>&#12288;&#12288;导演：</label>
+						<input name="movie.director" placeholder="导演"><br> <br>
+						
+						<label>&#12288;&#12288;主演：</label>
+						<input name="movie.actors" placeholder="主演"><br> <br>
+						
 						<label>电影描述：</label>
 						<input name="movie.description" placeholder="电影描述"><br><br>
 						
 						<label>详情链接：</label>
-						<input name="movie.url" placeholder="详情链接"><br>
+						<input name="movie.url" placeholder="详情链接"><br><br>
 						
 						<label>电影分类：</label>
 						<select name="movie.kind.id" required>
