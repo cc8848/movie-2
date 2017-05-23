@@ -13,7 +13,6 @@
 <title>添加页面</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<!--Bootstrap CSS必须要放在第一个，才不会覆盖自己写的CSS-->
 <link rel="shortcut icon" href="images/bjj.png">
 <link href="css/admin.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
@@ -91,7 +90,7 @@
 							<option value="3">动漫</option>
 							<option value="4">悬疑</option>
 						</select> <br>
-					<button type="submit">修改</button>
+						<button type="submit">修改</button>
 				</form>
 			</div>
 		</main>

@@ -45,18 +45,18 @@
 				<!--使用offset来将列右移，不要使用右飘-->
 				<div>
 					<struts:if test="#session.user==null">
-						<a href="login.jsp">登录</a>
-						<a href="register.jsp">注册</a>
+						<a class="btn btn-lg btn-success" href="login.jsp">登录</a>
+						<a class="btn btn-lg btn-primary" href="register.jsp">注册</a>
 					</struts:if>
 					<struts:else>
-					<div>
-						<p>
-							<struts:property value="#session.user.username" />
-						</p>
-						<struts:if test="#session.user.admin==true">
-							<a href="add.jsp">添加电影</a>
-						</struts:if>
-						<a href="userAction_logout">注销</a>
+						<div>
+							<p>
+								<struts:property value="#session.user.username" />
+							</p>
+							<struts:if test="#session.user.admin==true">
+								<a href="add.jsp">添加电影</a>
+							</struts:if>
+							<a href="userAction_logout">注销</a>
 						</div>
 					</struts:else>
 				</div>
@@ -81,7 +81,8 @@
 
 		<section class="row">
 			<div class="col-sm-4 col-xs-10">
-				<a href="<struts:property value='movie.url' />"> <img class="imgdetail"
+				<a href="<struts:property value='movie.url' />"> <img
+					class="imgdetail"
 					src="pictures/<struts:property value='movie.imageName' />"
 					title="在线观看" /></a>
 			</div>
@@ -91,8 +92,12 @@
 					<struts:property value='movie.name' />
 				</p>
 				<p class="moviename detail">
-					导演：<struts:property value='movie.director' />&#12288;&#12288;
-					主角：<struts:property value='movie.actors' />
+					<a href="director.jsp">导演：
+					<struts:property value='movie.director' />
+					</a>
+					&#12288;&#12288; <a href="actor.jsp">主角：
+					<struts:property value='movie.actors' />
+					</a>
 				</p>
 				<p class="detail_t">剧情简介：</p>
 				<div class="detail">
