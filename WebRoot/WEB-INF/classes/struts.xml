@@ -30,7 +30,6 @@
 		<action name="adminAction_*" class="movie.action.AdminAction"
 			method="{1}">
 			<result name="edit">edit.jsp</result>
-			<result name="lovelist">/list.jsp?kind.id=1</result>
 		</action>
 	</package>
 </struts>
