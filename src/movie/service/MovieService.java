@@ -18,6 +18,10 @@ public class MovieService {
 	KindDAO kindDAO;
 	@Resource
 	MovieDAO movieDAO;
+	@Resource
+	DirectorDAO directorDAO;
+	@Resource
+	ActorDAO actorDAO;
 
 	public Kind getKind(Integer id) {
 		return kindDAO.get(id);
@@ -30,5 +34,13 @@ public class MovieService {
 
 	public List<Movie> newset() {
 		return movieDAO.newest();
+	}
+
+	public Director getDirector(Integer id) {
+		return directorDAO.get(id);
+	}
+
+	public Actor getActor(Integer id) {
+		return actorDAO.get(id);
 	}
 }

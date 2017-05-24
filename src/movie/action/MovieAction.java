@@ -21,7 +21,28 @@ public class MovieAction extends ActionSupport {
 	private Kind kind;
 	private Movie movie;
 	private List<Movie> newest;
-
+	private Director director;
+	public Director getDirector() {
+		return director;
+	}
+	public void setDirector(Director director) {
+		this.director = director;
+	}
+	private Actor actor;
+	public Actor getActor() {
+		return actor;
+	}
+	public void setActor(Actor actor) {
+		this.actor = actor;
+	}
+	public String actor(){
+		actor=service.getActor(actor.getId());
+		return "actor";
+	}
+	public String director(){
+		director=service.getDirector(director.getId());
+		return "director";
+	}
 	public String list() {
 		if (kind.getId() == null) {
 			System.err.println("抛出异常");
