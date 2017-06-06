@@ -92,12 +92,10 @@
 					<struts:property value='movie.name' />
 				</p>
 				<p class="moviename detail">
-					<a href="director.jsp">导演：
-					<struts:property value='movie.director' />
-					</a>
-					&#12288;&#12288; <a href="actor.jsp">主角：
-					<struts:property value='movie.actors' />
-					</a>
+					导演：
+					<a href="director.jsp"><struts:property value='movie.director' /></a>
+					&#12288;&#12288;主角：
+					 <a href="actor.jsp"><struts:property value='movie.actors' /></a>
 				</p>
 				<p class="detail_t">剧情简介：</p>
 				<div class="detail">

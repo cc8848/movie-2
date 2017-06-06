@@ -33,6 +33,8 @@ public class Movie {
 	private Long count;
 	/* 电影导演 */
 	private String director;
+	/* 导演代表作 */
+	private String works;
 	/* 电影主角 */
 	private String actors;
 	/* 电影类别 */
@@ -127,5 +129,13 @@ public class Movie {
 
 	public void setActors(String actors) {
 		this.actors = actors;
+	}
+
+	public String getWorks() {
+		return works;
+	}
+
+	public void setWorks(String works) {
+		this.works = works;
 	}
 }

@@ -22,6 +22,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		display:inline;
 		list-style-type:none;
 	}
+	aside div img{
+	height:320px;
+	width:270px;
+	}
 	section{font-size:14px;}
 	.works .prize li{
 		display:block;
@@ -89,32 +93,29 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</nav>
 	<main class="row">
 		<section class="col-xs-9">
-			<h2 class="name">阿米尔·汗</h2>
+			<h2 class="name">神木隆之介</h2>
             <div class="introduce">
-            <p>1965年3月14日&nbsp;&nbsp;印度孟买&nbsp;&nbsp;印度共和国</p>
-            	阿米尔·汗（Aamir Khan），1965年3月14日出生于印度孟买，印度宝莱坞演员、导演、制片人[1]  。
-				8岁的时侯，阿米尔·汗出演第一部电影《Yaadon Ki Baraat》。后来练习打网球，获得了马哈拉施特拉邦的网球冠军[2]  。
-				1988年，阿米尔·汗放弃网球重回银幕[3-4]  。
-				1989年，出演文艺片《灰飞烟灭》，饰演复仇男子。1999年，在《义无反顾》中出演印巴边境的抗暴警察阿贾伊。
-				2002年，阿米尔凭借剧情爱情电影《印度往事》获得zee电影奖最佳男主角奖 。
-				2008年，凭借导演 《地球上的星星》获得宝莱坞人民选择奖最佳导演奖。
-				2009年，出演了励志喜剧电影《三傻大闹宝莱坞》，饰演Rancho[5-6]  。
-				2011年，阿米尔·汗制作真人访谈节目《真相访谈》，成为联合国儿童基金会印度区第三任大使。
-				2013年，出演犯罪动作电影《幻影车神3》饰演Sahir和 Samar[5]  。
-				2014年，出演奇幻喜剧电影《我的个神啊》，饰演遗留在地球的外星人PK。2017年，出演励志运动电影《摔跤吧！爸爸》
+            <p>1993年5月19日 埼玉 日本</p>
+ 	神木隆之介（Kamiki Ryunosuke）1993年5月19日出生于日本埼玉县，日本演员、声优，毕业于堀越高校艺能班[1]  。
+	2004年凭借电影《爸爸的背摔绝技》中摔交选手的儿子下田雄一一角获得第十四届日本电影批评家大奖新人奖 。
+	2005年，首次主演电影《妖怪大战争》，获得日本电影学院奖新人演员奖。
+	2007年，首次主演电视剧《侦探学园Q》。
+	2012年，主演小说改编电影《听说桐岛要退部》，获得第4回TAMA电影奖最优秀新人男演员奖。
+	2013年，凭借电视剧《家族游戏》获得第77回日剧学院赏最佳男配角奖[8]  。2014年，主演东野圭吾小说改编电视剧《变身》。
+	2015年，主演漫改电影《爆漫王》。
+	2016年，为动画电影《你的名字。》男主角配音。
+	2017年，主演漫改电影《3月的狮子：前篇》、《3月的狮子：后篇》
             </div><br>
             <div class="row">
             	<div class="col-xs-6">
-           			中文名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;詹姆斯·古恩<br>
-            		外文名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;James Gunn <br>
-					出生地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美国密苏里州圣路易<br> 
-					出生日期&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1970年8月5日 <br>
+            		外文名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;かみき りゅうのすけ、Ryunosuke Kamiki <br>
+					出生地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日本埼玉<br> 
+					出生日期&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1993年5月19日<br>
             	</div>
 
 				<div class="col-xs-6">
-                	职  业&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;导演、编剧、制片人、演员 <br>
-					主要成就&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;入围第41届美国科幻恐怖电影奖土星奖最佳导演<br> 
-					代表作品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;《银河护卫队》
+                	职  业&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;演员、声优<br>
+					主要成就&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第29回日本电影学院赏 新人演员赏 <br> 
             	</div>
                 <div class="col-xs-12 works">
                 	<h3>代表作品</h3>
@@ -125,14 +126,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</ul>
                     <h3>获奖记录</h3>
                     <ul class="prize">
-                    	<li> 2002    影评人最佳男主角    《心归何处》    （获奖） </li>   
-						<li>2002    最佳男主角    《印度往事》    （获奖）    </li>
+                    	<li> 2013    第17回    日刊体育日剧大赏 最佳男助演赏    《家族游戏》    （获奖）</li>   
+						<li> 2013    第23回    TV LIFE年度电视剧大赏最佳男助演赏    《家族游戏》    （获奖）</li>
                     </ul>
                 </div>
             </div>
 		</section>
 		<aside class="col-xs-3">
-       		<div><img src="images/詹姆斯古恩.jpg" /></div>
+       		<div><img src="images/神木隆之介.jpg" /></div>
 		</aside>
 	</main>
 	<footer class="row">

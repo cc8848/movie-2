@@ -16,6 +16,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <style type="text/css">
 	section{font-size:14px;}
 	.works ul li{list-style-type:none;}
+	aside div img{
+	height:320px;
+	width:270px;
+	}
 </style>
 </head>
 
@@ -79,51 +83,43 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</nav>
 	<main class="row">
 		<section class="col-xs-9">
-			<h2 class="name">詹姆斯·古恩</h2>
+			<h2 class="name">新海诚</h2>
             <div class="introduce">
-            	詹姆斯·古恩（James Gunn），1970年8月5日出生于美国密苏里州圣路易，电影导演、编剧、制片人、演员。
-				2015年3月5日，凭借《银河护卫队》入围第41届美国科幻恐怖电影奖土星奖最佳导演
+            	新海诚（Makoto Shinkai），原名：新津诚（Makoto Niitsu），1973年2月9日出生于日本长野县南佐久郡小海町，日本动画导演和作家，居住在东京都，日本长野县野泽北高等学校、日本中央大学文学部日本文学系毕业。
+2002年公开独立制作的科幻动画短片《星之声》后开始受到瞩目。现于Comix Wave Films担任映像作家。
+2016年导演动画电影《你的名字。》
             </div><br>
             <div class="row">
             	<div class="col-xs-6">
-           			中文名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;詹姆斯·古恩<br>
-            		外文名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;James Gunn <br>
-					出生地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美国密苏里州圣路易<br> 
-					出生日期&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1970年8月5日 <br>
+            		外文名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Makoto Shinkai，しんかい まこと<br>
+					出生地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日本长野县<br> 
+					出生日期&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1973年2月9日 <br>
             	</div>
 
 				<div class="col-xs-6">
-                	职  业&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;导演、编剧、制片人、演员 <br>
-					主要成就&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;入围第41届美国科幻恐怖电影奖土星奖最佳导演<br> 
-					代表作品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;《银河护卫队》
+                	职  业&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日本动画导演和作家<br>
+					主要成就&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第40届日本电影学院奖最佳编剧奖<br> 
             	</div>
                 <div class="col-xs-12 works">
                 	<h3>主要作品</h3>
                     <div>
                         <ul>
-							<li>《撕裂人》2006年</li>
-							<li>《超级英雄》2010年</li>
-							<li>《电影43》2013年</li>
-							<li>《雷神2：黑暗世界》2013年（彩蛋）</li>
-							<li>《银河护卫队》2014年</li>
-							<li>《银河护卫队2》2017年</li>
-							<li>《撕裂人》2006年</li>
-							<li>《超级英雄》2010年</li>
-							<li>《电影43》2013年</li>
-							<li>《雷神2：黑暗世界》2013年（彩蛋）</li>
-							<li>《银河护卫队》2014年</li>
-							<li>《银河护卫队2》2017年</li>
+							<li>她和她的猫（1999年）</li>
+							<li>云之彼端，约定的地方（2004年）</li>
+							<li>秒速5厘米（2007年）</li>
+							<li>言叶之庭（2013年</li>
+							<li>你的名字。（2016年）</li>
 						</ul>
                     </div>
                     <h3>获奖记录</h3>
                     <ul>
-                    <li>2015-03    第41届    美国科幻恐怖电影奖土星奖最佳导演    银河护卫队    （提名）</li>
+                    <li>2017    第11届亚洲电影大奖最佳编剧奖[22]     你的名字。    （提名）    </li>
                     </ul>
                 </div>
             </div>
 		</section>
 		<aside class="col-xs-3">
-       		<div><img src="images/詹姆斯古恩.jpg" /></div>
+       		<div><img src="images/新海诚.jpg" /></div>
 		</aside>
 	</main>
 	<footer class="row">

@@ -72,13 +72,35 @@
 						<input name="movie.name" placeholder="电影名字"><br><br> 
 						
 						<label>&#12288;&#12288;导演：</label>
-						<input name="movie.director" placeholder="导演"><br> <br>
+						<input name="movie.director" placeholder="导演"><br><br>
 						
-						<label>&#12288;&#12288;主演：</label>
-						<input name="movie.actors" placeholder="主演"><br> <br>
+						<label>导演简介：</label>
+						<input name="movie.introduce" placeholder="导演简介"><br><br>
+						
+						<label>导演生日：</label>
+						<input name="movie.introduce" placeholder="导演生日"><br><br>
+						
+						<label>导演代表作品：</label>
+						<input name="movie.works" placeholder="导演代表作品"><br><br>
+						
+						<label>导演家乡：</label>
+						<input name="movie.introduce" placeholder="导演家乡"><br><br>
+						
+						<label>导演获奖奖项：</label>
+						<input name="movie.works" placeholder="导演获奖奖项"><br><br>
+						
+						<label>&#12288;&#12288;主演1：</label>
+						<input name="movie.actors" placeholder="主演1">
+						<label>&#12288;&#12288;主演2：</label>
+						<input name="movie.actors" placeholder="主演2">
+						<label>&#12288;&#12288;主演3：</label>
+						<input name="movie.actors" placeholder="主演3">
+						<label>&#12288;&#12288;主演4：</label>
+						<input name="movie.actors" placeholder="主演4"><br><br>
+						
 						
 						<label>电影描述：</label>
-						<input name="movie.description" placeholder="电影描述"><br><br>
+						<textarea name="movie.description" placeholder="电影描述"></textarea><br><br>
 						
 						<label>详情链接：</label>
 						<input name="movie.url" placeholder="详情链接"><br><br>
