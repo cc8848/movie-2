@@ -15,7 +15,6 @@ import org.springframework.stereotype.Repository;
 /**
  * 电影类DAO 实现了电影的增加，获取，为某条电影增加评论功能
  * 
- * @author 杨赟
  */
 @Repository
 public class MovieDAO extends HibernateDaoSupport {

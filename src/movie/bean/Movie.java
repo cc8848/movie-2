@@ -9,7 +9,6 @@ import org.hibernate.annotations.Type;
 /**
  * 电影类实体类
  * 
- * @author 杨赟
  */
 @Entity
 public class Movie {
@@ -33,10 +32,26 @@ public class Movie {
 	private Long count;
 	/* 电影导演 */
 	private String director;
-	/* 导演代表作 */
-	private String works;
-	/* 电影主角 */
-	private String actors;
+	/* 电影导演简介 */
+	private String introduction;
+	/* 电影导演 生日 */
+	private String birthday;
+	/* 电影导演 家乡 */
+	private String hometown;
+	/* 电影导演奖项 */
+	private String prize;
+	/* 导演代表作1 */
+	private String works1;
+	/* 导演代表作2 */
+	private String works2;
+	/* 导演代表作3 */
+	private String works3;
+	/* 电影主角 1 */
+	private String actors1;
+	/* 电影主角 2 */
+	private String actors2;
+	/* 电影主角 3 */
+	private String actors3;
 	/* 电影类别 */
 	@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	@JoinColumn
@@ -123,19 +138,84 @@ public class Movie {
 		this.director = director;
 	}
 
-	public String getActors() {
-		return actors;
+	public String getIntroduction() {
+		return introduction;
 	}
 
-	public void setActors(String actors) {
-		this.actors = actors;
+	public void setIntroduction(String introduction) {
+		this.introduction = introduction;
 	}
 
-	public String getWorks() {
-		return works;
+	public String getBirthday() {
+		return birthday;
 	}
 
-	public void setWorks(String works) {
-		this.works = works;
+	public void setBirthday(String birthday) {
+		this.birthday = birthday;
 	}
+
+	public String getHometown() {
+		return hometown;
+	}
+
+	public void setHometown(String hometown) {
+		this.hometown = hometown;
+	}
+
+	public String getPrize() {
+		return prize;
+	}
+
+	public void setPrize(String prize) {
+		this.prize = prize;
+	}
+
+	public String getWorks1() {
+		return works1;
+	}
+
+	public void setWorks1(String works1) {
+		this.works1 = works1;
+	}
+
+	public String getWorks2() {
+		return works2;
+	}
+
+	public void setWorks2(String works2) {
+		this.works2 = works2;
+	}
+
+	public String getWorks3() {
+		return works3;
+	}
+
+	public void setWorks3(String works3) {
+		this.works3 = works3;
+	}
+
+	public String getActors1() {
+		return actors1;
+	}
+
+	public void setActors1(String actors1) {
+		this.actors1 = actors1;
+	}
+
+	public String getActors2() {
+		return actors2;
+	}
+
+	public void setActors2(String actors2) {
+		this.actors2 = actors2;
+	}
+
+	public String getActors3() {
+		return actors3;
+	}
+
+	public void setActors3(String actors3) {
+		this.actors3 = actors3;
+	}
+
 }

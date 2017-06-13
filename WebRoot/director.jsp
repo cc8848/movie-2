@@ -1,7 +1,11 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib uri="/struts-tags" prefix="struts"%>
+<%@ page import="movie.bean.Movie"%>
 <%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
 %>
 
 <!doctype html>
@@ -83,7 +87,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</nav>
 	<main class="row">
 		<section class="col-xs-9">
-			<h2 class="name">新海诚</h2>
+			<h2 class="name"><struts:property value='movie.director' /></h2>
             <div class="introduce">
             	新海诚（Makoto Shinkai），原名：新津诚（Makoto Niitsu），1973年2月9日出生于日本长野县南佐久郡小海町，日本动画导演和作家，居住在东京都，日本长野县野泽北高等学校、日本中央大学文学部日本文学系毕业。
 2002年公开独立制作的科幻动画短片《星之声》后开始受到瞩目。现于Comix Wave Films担任映像作家。
@@ -91,36 +95,36 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             </div><br>
             <div class="row">
             	<div class="col-xs-6">
-            		外文名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Makoto Shinkai，しんかい まこと<br>
-					出生地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日本长野县<br> 
-					出生日期&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1973年2月9日 <br>
+					出生地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<struts:property value='movie.hometown' /><br> 
+					出生日期&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<struts:property value='movie.birthday' /> <br>
             	</div>
 
 				<div class="col-xs-6">
-                	职  业&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日本动画导演和作家<br>
-					主要成就&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第40届日本电影学院奖最佳编剧奖<br> 
+                	职  业&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+					主要成就&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> 
             	</div>
                 <div class="col-xs-12 works">
                 	<h3>主要作品</h3>
                     <div>
                         <ul>
-							<li>她和她的猫（1999年）</li>
-							<li>云之彼端，约定的地方（2004年）</li>
-							<li>秒速5厘米（2007年）</li>
-							<li>言叶之庭（2013年</li>
-							<li>你的名字。（2016年）</li>
+							<li><struts:property value='movie.works1' /></li>
+							<li><struts:property value='movie.works2' /></li>
+							<li><struts:property value='movie.works3' /></li>
 						</ul>
                     </div>
                     <h3>获奖记录</h3>
                     <ul>
-                    <li>2017    第11届亚洲电影大奖最佳编剧奖[22]     你的名字。    （提名）    </li>
+                    <li><struts:property value='movie.prize' /></li>
                     </ul>
                 </div>
             </div>
 		</section>
 		<aside class="col-xs-3">
-       		<div><img src="images/新海诚.jpg" /></div>
-		</aside>
+				<div>
+					<img class="imgdetail"
+						src="pictures/<struts:property value='movie.imageName' />" />
+				</div>
+			</aside>
 	</main>
 	<footer class="row">
 		<p class="text-center">版权所有&copy;赴宇宙调研小组.建议使用IE8及以上、火狐Firefox、谷歌chrome浏览器</p>

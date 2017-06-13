@@ -1,19 +1,29 @@
 @charset "utf-8";
 /* CSS Document */
-main{
-	min-height:350px;
-	font-size:1.6em;
-	background-color:#f0f0f0;
-	}
-main form{padding-top:2em;}
-.title{margin-bottom:1em;}
-.login{
-	background-color:#FFF;
-	border:solid;
-	border-color:#0CF;
-	padding:2em;
-	padding-top:1em;
-	}
+main {
+	min-height: 350px;
+	font-size: 1.6em;
+	
+}
+
+main form {
+	padding-top: 2em;
+}
+
+.title {
+	margin-bottom: 1em;
+}
+
+.login {
+	text-align: center;
+	border: solid;
+	padding: 2em;
+	padding-top: 1em;
+	filter: alpha(Opacity = 60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	border-radius: 8px;
+}
 /* *{
     background: #000 !important;
     color: #0f0 !important;

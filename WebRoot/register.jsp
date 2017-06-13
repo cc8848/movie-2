@@ -62,29 +62,41 @@
 		</nav>
 		<main class="row">
 			<div class="col-sm-4 col-md-offset-4 col-xs-offset-3">
-				<form action="userAction_register" method="post">
+				<form action="userAction_register" method="post"
+					class="log log-front" cssClass="login">
 					<div class="login">
-						<h2 class="title text-center">用户注册</h2>
-						<div>
-							<p>
-								账户名：<input name="user.account" type="text" placeholder="用户名 "
-									pattern="^[a-zA-Z]\w{4,9}$" required>
-							</p>
-							<p>
-								昵称：<input name="user.username" type="text" placeholder="昵称"
-									required>
-							</p>
-							<p>
-								密码：<input name="user.password" type="password" id="pass"
-									placeholder="登录密码" pattern="^[a-zA-Z]\w{4,9}$" required>
-							</p>
-							<button id="register" type="submit"
-								class="btn btn-info col-xs-offset-4 col-md-offset-8">注册</button>
+						<h3 class="title text-center">用户注册</h3>
+						<div class="form-group">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-user"></i></span> <input
+									style="BACKGROUND-COLOR: transparent;" type="text"
+									name="user.account" class="form-control"
+									pattern="^[a-zA-Z]\w{4,9}$" placeholder="用户名" required>
+							</div>
+							<br>
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-user"></i></span> <input
+									style="BACKGROUND-COLOR: transparent;" type="text"
+									name="user.username" class="form-control"
+									pattern="^[a-zA-Z]\w{4,9}$" placeholder="昵称" required>
+							</div>
+							<br>
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-lock"></i></span> <input
+									style="BACKGROUND-COLOR: transparent;" type="password"
+									name="user.password" class="form-control" id="pass"
+									placeholder="密码" pattern="^[a-zA-Z]\w{4,9}$" required>
+							</div>
 						</div>
+						<button type="submit" class="btn btn-success">Register</button>
+						<button type="reset" class="btn btn-success col-xs-offset-2">Cancel</button>
 					</div>
 				</form>
 			</div>
-		</main>
+		</main><br>
 		<footer class="row">
 			<div class="row-xs-12">
 				<p class="text-center">版权所有&copy;赴宇宙调研小组.建议使用IE8及以上、火狐Firefox、谷歌chrome浏览器</p>

@@ -94,8 +94,12 @@
 				<p class="moviename detail">
 					导演：
 					<a href="director.jsp"><struts:property value='movie.director' /></a>
-					&#12288;&#12288;主角：
-					 <a href="actor.jsp"><struts:property value='movie.actors' /></a>
+					&#12288;&#12288;主角1：
+					 <a href="actor.jsp"><struts:property value='movie.actors1' /></a>
+					 &#12288;&#12288;主角2：
+					 <a href="actor.jsp"><struts:property value='movie.actors2' /></a>
+					 &#12288;&#12288;主角3：
+					 <a href="actor.jsp"><struts:property value='movie.actors3' /></a>
 				</p>
 				<p class="detail_t">剧情简介：</p>
 				<div class="detail">

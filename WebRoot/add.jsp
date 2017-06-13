@@ -64,47 +64,21 @@
 				<form name="addform" method="post" enctype="multipart/form-data"
 					action="adminAction_addMovie">
 					<label>电影图片：</label>
-					<input name="image" type="file"><br><br> 
+					<input name="image" type="file"><br> 
 					
-					<label>&#12288;&#12288;电影名字：</label>
-					<input name="movie.name" placeholder="电影名字">
+					<label>电影名字：</label>
+					<input name="movie.name" placeholder="电影名字"><br>
 					 
-					<label>&#12288;&#12288;&#12288;&#12288;&#12288;&#12288;&#12288;导演：</label>
-					<input name="movie.director" placeholder="导演">
+					<label>&#12288;&#12288;导演：</label>
+					<input name="movie.director" placeholder="导演"><br>
 					
-						<label>&#12288;&#12288;&#12288;&#12288;导演简介：</label>
-						<input name="movie.introduce" placeholder="导演简介"><br><br>
-						
-						<label>&#12288;&#12288;导演生日：</label>
-						<input name="movie.introduce" placeholder="导演生日"><br><br>
-						
-						<label>导演代表作品1：</label>
-						<input name="movie.works" placeholder="导演代表作品">					
-						<label>&#12288;&#12288;导演代表作品2：</label>
-						<input name="movie.works" placeholder="导演代表作品">					
-						<label>&#12288;&#12288;导演代表作品3：</label>
-						<input name="movie.works" placeholder="导演代表作品"><br><br>
-						
-						<label>&#12288;&#12288;导演家乡：</label>
-						<input name="movie.introduce" placeholder="导演家乡">
-						
-						<label>&#12288;&#12288;&#12288;导演获奖奖项：</label>
-						<input name="movie.works" placeholder="导演获奖奖项"><br><br>
-						
-						<label>&#12288;&#12288;&#12288;主演1：</label>
-						<input name="movie.actors" placeholder="主演1">
-						<label>&#12288;&#12288;&#12288;&#12288;&#12288;&#12288;&#12288;主演2：</label>
-						<input name="movie.actors" placeholder="主演2">
-						<label>&#12288;&#12288;&#12288;&#12288;&#12288;&#12288;主演3：</label>
-						<input name="movie.actors" placeholder="主演3"><br><br>
-						
-					<label>&#12288;电影描述：</label>
-					<input name="movie.description" placeholder="电影描述">
+					<label>电影描述：</label>
+					<input name="movie.description" placeholder="电影描述"><br>
 					
-					<label>&#12288;&#12288;&#12288;&#12288;&#12288;&#12288;详情链接：</label>
+					<label>详情链接：</label>
 					<input name="movie.url" placeholder="详情链接"><br><br>
 					
-					<label>&#12288;电影分类：</label>
+					<label>电影分类：</label>
 					<select name="movie.kind.id" required>
 						<option value="1" selected>爱情</option>
 						<option value="2">喜剧</option>

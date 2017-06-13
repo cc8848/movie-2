@@ -11,7 +11,6 @@ import org.springframework.stereotype.Repository;
 /**
  * 评论类DAO 实现了评论的增加，获取功能
  * 
- * @author 杨赟
  */
 @Repository
 public class CommentDAO extends HibernateDaoSupport {

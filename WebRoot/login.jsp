@@ -61,21 +61,28 @@
 		</nav>
 		<main class="row">
 			<div class="col-sm-4 col-md-offset-4 col-xs-offset-3">
-				<form action="userAction_login" method="post">
+				<form action="userAction_login" method="post" class="log log-front">
 					<div class="login">
-						<h2 class="title text-center">用户登录</h2>
-						<div>
-							<p>
-								用户名：<input name="user.account" type="text" id="user"
-									placeholder="用户名" pattern="^[a-zA-Z]\w{4,9}$" required>
-							</p>
-							<p>
-								&#12288;密码：<input name="user.password" type="password" id="pass"
-									placeholder="登录密码" pattern="^[a-zA-Z]\w{4,9}$" required>
-							</p>
-							<button type="reset" class="btn btn-info col-xs-offset-3">重置</button>
-							<button type="submit" class="btn btn-info col-xs-offset-3">登录</button>
+						<h3>请您登录</h3>
+						<div class="form-group">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-user"></i></span> <input
+									style="BACKGROUND-COLOR: transparent;" type="text"
+									name="user.account" class="form-control"
+									pattern="^[a-zA-Z]\w{4,9}$" placeholder="用户名" required>
+							</div>
+							<br>
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-lock"></i></span> <input
+									style="BACKGROUND-COLOR: transparent;" type="password"
+									name="user.password" class="form-control" id="pass"
+									placeholder="密码" pattern="^[a-zA-Z]\w{4,9}$" required>
+							</div>
 						</div>
+						<button type="submit" class="btn btn-success">Login</button>
+						<button type="reset" class="btn btn-success col-xs-offset-2">Cancel</button>
 					</div>
 				</form>
 			</div>

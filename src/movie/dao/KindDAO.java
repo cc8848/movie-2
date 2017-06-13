@@ -13,7 +13,6 @@ import org.springframework.stereotype.Repository;
 /**
  * 类别类DAO
  * 
- * @author 杨赟
  */
 @Repository
 public class KindDAO extends HibernateDaoSupport {

@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib uri="/struts-tags" prefix="struts"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -120,9 +121,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <div class="col-xs-12 works">
                 	<h3>代表作品</h3>
                         <ul>
-							<li><a href="movie.jsp"><img src="images/狼少年.jpg" class="worksimg"></a></li>
-							<li><a href="movie.jsp"><img src="images/狼少年.jpg" class="worksimg"></a></li>
-							<li><a href="movie.jsp"><img src="images/狼少年.jpg" class="worksimg"></a></li>
+							<li><struts:property value='actor.works1' /></li>
+							<li><struts:property value='actor.works2' /></li>
+							<li><struts:property value='actor.works3' /></li>
 						</ul>
                     <h3>获奖记录</h3>
                     <ul class="prize">
