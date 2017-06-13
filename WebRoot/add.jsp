@@ -87,6 +87,8 @@
 					</select> <br>
 					<button type="submit" class="btn btn-primary">添加</button>
 				</form>
+				<a href="addDirector.jsp">添加导演信息</a><br>
+				<a href="addActors.jsp">添加主演信息</a>
 			</div>
 		</main>
 		<footer class="row">
