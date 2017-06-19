@@ -1,10 +1,13 @@
 package movie.dao;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import movie.bean.Director;
 
 import org.hibernate.SessionFactory;
+import org.springframework.orm.hibernate4.HibernateTemplate;
 import org.springframework.orm.hibernate4.support.HibernateDaoSupport;
 import org.springframework.stereotype.Repository;
 
@@ -29,5 +32,22 @@ public class DirectorDAO extends HibernateDaoSupport {
 	@Resource(name = "sessionFactory")
 	public void setSuperSessionFactory(SessionFactory sessionFactory) {
 		super.setSessionFactory(sessionFactory);
+	}
+
+	public List<Director> list() {
+		return (List<Director>) getHibernateTemplate().find(" select director from Director director ");
+	}
+
+	public boolean delete(Director director) {
+		HibernateTemplate template=getHibernateTemplate();
+		if(template.find(" select movie from Movie movie where movie.director = ? ",director).size()!=0)
+			return false;
+		template.delete(director);
+		return true;
+	}
+
+	public void add(Director director) {
+		director.setId(1);
+		getHibernateTemplate().save(director);
 	}
 }

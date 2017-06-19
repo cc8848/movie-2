@@ -18,6 +18,7 @@ public class MovieAction extends ActionSupport {
 	private final String MOVIE = "movie";
 	@Resource
 	MovieService service;
+	private List<Kind> kinds;
 	private Kind kind;
 	private Movie movie;
 	private List<Movie> newest;
@@ -36,14 +37,17 @@ public class MovieAction extends ActionSupport {
 		this.actor = actor;
 	}
 	public String actor(){
+		setKinds(service.listKind());
 		actor=service.getActor(actor.getId());
 		return "actor";
 	}
 	public String director(){
+		setKinds(service.listKind());
 		director=service.getDirector(director.getId());
 		return "director";
 	}
 	public String list() {
+		setKinds(service.listKind());
 		if (kind.getId() == null) {
 			System.err.println("抛出异常");
 		}
@@ -64,6 +68,7 @@ public class MovieAction extends ActionSupport {
 	}
 
 	public String movie() {
+		setKinds(service.listKind());
 		if (movie == null) {
 			System.err.println("抛出异常");
 		}
@@ -106,5 +111,11 @@ public class MovieAction extends ActionSupport {
 
 	public void setNewest(List<Movie> newest) {
 		this.newest = newest;
+	}
+	public List<Kind> getKinds() {
+		return kinds;
+	}
+	public void setKinds(List<Kind> kinds) {
+		this.kinds = kinds;
 	}
 }

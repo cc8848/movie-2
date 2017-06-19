@@ -19,7 +19,6 @@ import movie.service.*;
 public class UserAction extends ActionSupport implements SessionAware {
 	@Resource
 	UserService service;
-	private final String INDEX = "index";
 	private Map<String, Object> session;
 	private User user;
 	private Comment comment;
@@ -36,7 +35,7 @@ public class UserAction extends ActionSupport implements SessionAware {
 		}
 		service.register(user);
 		this.getActionErrors();
-		return INDEX;
+		return "indexAction";
 	}
 
 	public String login() {
@@ -45,12 +44,12 @@ public class UserAction extends ActionSupport implements SessionAware {
 		}
 		user = service.login(user);
 		session.put("user", user);
-		return INDEX;
+		return "indexAction";
 	}
 
 	public String logout() {
 		session.put("user", null);
-		return INDEX;
+		return "indexAction";
 	}
 
 	public String addComment() {
@@ -59,7 +58,7 @@ public class UserAction extends ActionSupport implements SessionAware {
 			System.err.println("抛出异常");
 		}
 		service.addComment(movie, user, comment);
-		return INDEX;
+		return "indexAction";
 	}
 
 	@Override

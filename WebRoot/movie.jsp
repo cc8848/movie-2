@@ -67,15 +67,10 @@
 		<!--导航部分-->
 		<nav class="row">
 			<ul class="nav nav-pills text-center">
-				<li class="col-xs-12 col-md-2 "><a href="index.jsp">首页</a></li>
-				<li class="col-xs-12 col-md-2"><a
-					href="movieAction_list?kind.id=1">爱情类</a></li>
-				<li class="col-xs-12 col-md-2"><a
-					href="movieAction_list?kind.id=2">喜剧类</a></li>
-				<li class="col-xs-12 col-md-2 active"><a
-					href="movieAction_list?kind.id=3">动漫类</a></li>
-				<li class="col-xs-12 col-md-2"><a
-					href="movieAction_list?kind.id=4">悬疑类</a></li>
+				<li class="col-xs-12 col-md-2 active"><a href="indexAction">首页</a></li>
+				<struts:iterator value="kinds">
+					<li class="col-xs-12 col-md-2"><a href="movieAction_list?kind.id=<struts:property value='id'/>"><struts:property value="name"/></a></li>
+				</struts:iterator>
 			</ul>
 		</nav>
 
@@ -97,12 +92,9 @@
 						<struts:property value='movie.director.name' />
 					</a>
 					&#12288;&#12288;主角：
-					<struts:iterator value='movie.actors'>
-					<a href="movieAction_actor?actor.id=<struts:property value='movie.director.id' />">		
-						<struts:property value='name' />
+					<a href="movieAction_actor?actor.id=<struts:property value='movie.actor.id' />">		
+						<struts:property value='movie.actor.name' />
 					</a>
-					&#12288;&#12288;
-					</struts:iterator>
 				</p>
 				<p class="detail_t">剧情简介：</p>
 				<div class="detail">

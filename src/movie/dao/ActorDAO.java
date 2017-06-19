@@ -1,8 +1,11 @@
 package movie.dao;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import movie.bean.Actor;
+import movie.bean.Kind;
 
 import org.hibernate.SessionFactory;
 import org.springframework.orm.hibernate4.support.HibernateDaoSupport;
@@ -29,5 +32,19 @@ public class ActorDAO extends HibernateDaoSupport {
 	@Resource(name = "sessionFactory")
 	public void setSuperSessionFactory(SessionFactory sessionFactory) {
 		super.setSessionFactory(sessionFactory);
+	}
+
+	public List<Actor> list() {
+		return (List<Actor>) getHibernateTemplate().find(" select actor from Actor actor ");
+	}
+
+	public boolean delete(Actor actor) {
+		getHibernateTemplate().delete(actor);
+		return true;
+	}
+
+	public void add(Actor actor) {
+		actor.setId(1);
+		getHibernateTemplate().save(actor);
 	}
 }

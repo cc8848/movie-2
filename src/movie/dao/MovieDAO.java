@@ -4,7 +4,9 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import movie.bean.Actor;
 import movie.bean.Comment;
+import movie.bean.Director;
 import movie.bean.Movie;
 
 import org.hibernate.SessionFactory;
@@ -33,7 +35,10 @@ public class MovieDAO extends HibernateDaoSupport {
 	 */
 	public void add(Movie movie) {
 		movie.setId(1);
-		getHibernateTemplate().save(movie);
+		HibernateTemplate template = getHibernateTemplate();
+		movie.setActor(template.get(Actor.class, movie.getActor().getId()));
+		movie.setDirector(template.get(Director.class, movie.getDirector().getId()));
+		template.save(movie);
 	}
 
 	/**
@@ -86,5 +91,9 @@ public class MovieDAO extends HibernateDaoSupport {
 	@Resource(name = "sessionFactory")
 	public void setSuperSessionFactory(SessionFactory sessionFactory) {
 		super.setSessionFactory(sessionFactory);
+	}
+
+	public List<Movie> list() {
+		return (List<Movie>) getHibernateTemplate().find(" select movie from Movie movie ");
 	}
 }

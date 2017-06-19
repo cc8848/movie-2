@@ -8,7 +8,8 @@
 	</package>
 	<package name="main" extends="struts-default" namespace="/">
 		<global-results>
-			<result name="index">index.jsp</result>
+			<result type="redirect" name="index">indexAction</result>
+			<result type="redirect" name="indexAction">indexAction</result>
 		</global-results>
 		<action name="movieAction_*" class="movie.action.MovieAction"
 			method="{1}">
@@ -21,14 +22,18 @@
 			method="{1}">
 			<result name="login">/login.jsp</result>
 		</action>
+		<action name="indexAction" class="movie.action.IndexAction">
+			<result name="indexjsp">index.jsp</result>
+		</action>
 	</package>
-	<package name="admin" extends="struts-default" namespace="/">
+	<package name="admin" extends="main" namespace="/">
 		<global-results>
-			<result name="index">index.jsp</result>
+			<result name="admin">admin.jsp</result>
 			<result name="add">add.jsp</result>
 		</global-results>
 		<action name="adminAction_*" class="movie.action.AdminAction"
 			method="{1}">
+			<result name="adminAction" type="chain">adminAction_</result>
 			<result name="edit">edit.jsp</result>
 		</action>
 	</package>

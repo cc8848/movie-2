@@ -35,9 +35,21 @@ public class Movie {
 	@ManyToOne
 	private Director director;
 	/* 电影主角 */
+	/*这是一部电影有多个主演的做法（请在下一版本中实现这种做饭）
 	@ManyToMany
 	@JoinTable
 	private List<Actor> actors;
+	*/
+	@ManyToOne
+	private Actor actor;
+	public Actor getActor() {
+		return actor;
+	}
+
+	public void setActor(Actor actor) {
+		this.actor = actor;
+	}
+
 	/* 电影类别 */
 	@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	@JoinColumn
@@ -46,7 +58,6 @@ public class Movie {
 	@OneToMany(targetEntity = Comment.class, cascade = CascadeType.ALL)
 	@JoinColumn(name = "movie_id")
 	private List<Comment> comments = new LinkedList<Comment>();
-
 	/* getter and setter */
 	public List<Comment> getComments() {
 		return comments;
@@ -123,13 +134,4 @@ public class Movie {
 	public void setDirector(Director director) {
 		this.director = director;
 	}
-
-	public List<Actor> getActors() {
-		return actors;
-	}
-
-	public void setActors(List<Actor> actors) {
-		this.actors = actors;
-	}
-
 }

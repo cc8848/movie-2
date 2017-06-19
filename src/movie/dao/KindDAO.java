@@ -1,5 +1,7 @@
 package movie.dao;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import movie.bean.*;
@@ -7,6 +9,7 @@ import movie.bean.*;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.orm.hibernate4.HibernateTemplate;
 import org.springframework.orm.hibernate4.support.HibernateDaoSupport;
 import org.springframework.stereotype.Repository;
 
@@ -19,31 +22,30 @@ import org.springframework.stereotype.Repository;
 public class KindDAO extends HibernateDaoSupport {
 	/**
 	 * 添加电影类别
-	 * 
-	 * @param kind
-	 *            要添加的类别
+	 * @param kind 要添加的类别
 	 */
 	public void add(Kind kind) {
 		kind.setId(1);
 		getHibernateTemplate().save(kind);
 	}
-
+	public void delete(Kind kind){
+		getHibernateTemplate().delete(kind);
+	}
 	/**
 	 * 获取电影类别
-	 * 
-	 * @param id
-	 *            电影类别唯一标识符
+	 * @param id 电影类别唯一标识符
 	 * @return 该类别
 	 */
 	public Kind get(Integer id) {
 		return (Kind) getHibernateTemplate().get(Kind.class, id);
 	}
-
+	public List<Kind> list(){
+		HibernateTemplate template=getHibernateTemplate();
+		return (List<Kind>) template.find(" select kind from Kind kind ");
+	}
 	/**
 	 * 获取电影类别
-	 * 
-	 * @param name
-	 *            电影类别
+	 * @param name 电影类别
 	 * @return 该类别
 	 */
 	public Kind get(String name) {
@@ -58,5 +60,8 @@ public class KindDAO extends HibernateDaoSupport {
 	@Resource(name = "sessionFactory")
 	public void setSuperSessionFactory(SessionFactory sessionFactory) {
 		super.setSessionFactory(sessionFactory);
+	}
+	public void edit(Kind kind) {
+		getHibernateTemplate().update(kind);
 	}
 }
