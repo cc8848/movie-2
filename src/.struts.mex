@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="test" location="390,620" size="180,70">
+    <action name="testAction" location="21,29" size="150,40" />
+  </package>
+  <package name="main" location="165,165" size="516,398">
+    <action name="movieAction_*" location="141,67" size="150,104">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="list.jsp" />
+      </result>
+      <result name="movie">
+        <resourceEdge source="movie" routing="0" target="movie.jsp" />
+      </result>
+      <result name="director">
+        <resourceEdge source="director" routing="0" target="director.jsp" />
+      </result>
+      <result name="actor">
+        <resourceEdge source="actor" routing="0" target="actor.jsp" />
+      </result>
+    </action>
+    <action name="userAction_*" location="145,196" size="150,41">
+      <result name="login">
+        <resourceEdge source="login" routing="0" target="login.jsp" />
+      </result>
+    </action>
+    <action name="indexAction" location="108,283" size="150,41">
+      <result name="*">
+        <resourceEdge source="*" routing="0" target="index.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="admin" location="25,620" size="280,140">
+    <action name="adminAction_*" location="71,63" size="150,41">
+      <result name="edit">
+        <resourceEdge source="edit" routing="0" target="edit.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="list.jsp" path="list.jsp" location="570,220" size="150,55" />
+  <webResource name="movie.jsp" path="movie.jsp" location="10,220" size="150,55" />
+  <webResource name="director.jsp" path="director.jsp" location="150,10" size="150,55" />
+  <webResource name="actor.jsp" path="actor.jsp" location="325,10" size="150,55" />
+  <webResource name="login.jsp" path="/login.jsp" location="570,395" size="150,55" />
+  <webResource name="edit.jsp" path="edit.jsp" location="115,815" size="150,55" />
+  <webResource name="index.jsp" path="index.jsp" location="50,500" size="150,55" />
+  <webResource name="index.jsp" path="/index.jsp" location="350,800" size="150,55" />
+</Struts2Diagram>
+
