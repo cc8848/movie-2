@@ -7,3 +7,7 @@ main{
 footer{
   margin-top:20px;
 }
+main .editimg{
+	width:10px;
+	height:10px;
+}

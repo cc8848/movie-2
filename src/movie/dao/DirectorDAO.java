@@ -14,7 +14,6 @@ import org.springframework.stereotype.Repository;
 /**
  * 导演类DAO
  * 
- * @author 杨赟
  */
 @Repository
 public class DirectorDAO extends HibernateDaoSupport {

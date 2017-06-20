@@ -7,7 +7,6 @@ import org.hibernate.annotations.Type;
 /**
  * 演员实体类
  * 
- * @author 杨赟
  */
 @Entity
 public class Actor {

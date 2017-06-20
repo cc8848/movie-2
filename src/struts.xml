@@ -23,7 +23,7 @@
 			<result name="login">/login.jsp</result>
 		</action>
 		<action name="indexAction" class="movie.action.IndexAction">
-			<result name="indexjsp">index.jsp</result>
+			<result name="indexjsp">/index.jsp</result>
 		</action>
 	</package>
 	<package name="admin" extends="main" namespace="/">

@@ -10,12 +10,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>添加页面</title>
+<title>编辑页面</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link rel="shortcut icon" href="images/bjj.png">
 <link href="css/admin.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 	<div class="container">
@@ -66,31 +67,29 @@
 				<form name="addform" method="post" enctype="multipart/form-data"
 					action="adminAction_editMovie?movie.id=<struts:property value='movie.id' />">
 					<label>电影图片：</label>
-					<img src="pictures/<struts:property value='movie.imageName' />" /><br><br>
-					<input type="file" id="file" style="display:none;" onchange="filechange(event)"> 
-						<label>电影名字：</label>
-						<input name="movie.name" placeholder="电影名字"><br><br> 
-						
-						<label>&#12288;&#12288;导演：</label>
-						<input name="movie.director" placeholder="导演"><br> <br>
-						
-						<label>&#12288;&#12288;主演：</label>
-						<input name="movie.actors" placeholder="主演"><br> <br>
-						
-						<label>电影描述：</label>
-						<input name="movie.description" placeholder="电影描述"><br><br>
-						
-						<label>详情链接：</label>
-						<input name="movie.url" placeholder="详情链接"><br><br>
-						
-						<label>电影分类：</label>
-						<select name="movie.kind.id" required>
-							<option value="1" selected>爱情</option>
-							<option value="2">喜剧</option>
-							<option value="3">动漫</option>
-							<option value="4">悬疑</option>
-						</select> <br>
-						<button type="submit">修改</button>
+					<div class="editimg">
+						<img src="pictures/<struts:property value='movie.imageName'/>" />
+					</div>
+					<br>
+					<br> <input type="file" id="file" style="display:none;"
+						onchange="filechange(event)"> <label>电影名字：</label> <input
+						name="movie.name" placeholder="电影名字"><br>
+					<br> <label>&#12288;&#12288;导演：</label> <input
+						name="movie.director" placeholder="导演"><br> <br>
+
+					<label>&#12288;&#12288;主演：</label> <input name="movie.actors"
+						placeholder="主演"><br> <br> <label>电影描述：</label>
+					<input name="movie.description" placeholder="电影描述"><br>
+					<br> <label>详情链接：</label> <input name="movie.url"
+						placeholder="详情链接"><br>
+					<br> <label>电影分类：</label> <select name="movie.kind.id"
+						required>
+						<option value="1" selected>爱情</option>
+						<option value="2">喜剧</option>
+						<option value="3">动漫</option>
+						<option value="4">悬疑</option>
+					</select> <br>
+					<button type="submit">修改</button>
 				</form>
 			</div>
 		</main>

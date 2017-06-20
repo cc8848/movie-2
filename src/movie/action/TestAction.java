@@ -14,7 +14,6 @@ import com.opensymphony.xwork2.ActionSupport;
 /**
  * 测试类Action
  * 
- * @author 杨赟
  */
 @SuppressWarnings("serial")
 @Scope("prototype")

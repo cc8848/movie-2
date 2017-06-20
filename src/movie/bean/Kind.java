@@ -8,7 +8,6 @@ import javax.persistence.*;
 /**
  * 电影类别实体类
  * 
- * @author 杨赟
  */
 @Entity
 public class Kind {

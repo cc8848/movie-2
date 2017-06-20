@@ -13,7 +13,6 @@ import org.springframework.stereotype.Repository;
 /**
  * 用户类DAO 实现了用户的增加与获取功能
  * 
- * @author 杨赟
  */
 @Repository
 public class UserDAO extends HibernateDaoSupport {

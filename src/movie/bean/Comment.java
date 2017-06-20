@@ -7,7 +7,6 @@ import org.hibernate.annotations.Type;
 /**
  * 评论类实体类
  * 
- * @author 杨赟
  */
 @Entity
 public class Comment {

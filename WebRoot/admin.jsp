@@ -277,7 +277,7 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">添加导演</h4>
-        <s>由于还未定义页面排版方式及字段，暂时将描述性文字以html源码的方式存储，只需在描述中输入html源码即可在预览界面得到显示效果。该行文本为无用文本，请在后续的版本中将我删除。</s>
+        <!-- <s>由于还未定义页面排版方式及字段，暂时将描述性文字以html源码的方式存储，只需在描述中输入html源码即可在预览界面得到显示效果。该行文本为无用文本，请在后续的版本中将我删除。</s> -->
       </div>
       <form action="adminAction_addDirector" method="post">
       <div class="modal-body">
@@ -305,7 +305,7 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">添加演员</h4>
-        <s>由于还未定义页面排版方式及字段，暂时将描述性文字以html源码的方式存储，只需在描述中输入html源码即可在预览界面得到显示效果。该行文本为无用文本，请在后续的版本中将我删除。</s>
+        <!-- <s>由于还未定义页面排版方式及字段，暂时将描述性文字以html源码的方式存储，只需在描述中输入html源码即可在预览界面得到显示效果。该行文本为无用文本，请在后续的版本中将我删除。</s> -->
       </div>
       <form action="adminAction_addActor" method="post">
       <div class="modal-body">

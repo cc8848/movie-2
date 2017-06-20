@@ -9,7 +9,6 @@ import org.hibernate.annotations.Type;
 /**
  * 电影类实体类
  * 
- * @author 杨赟
  */
 @Entity
 public class Movie {

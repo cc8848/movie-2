@@ -5,7 +5,6 @@ import javax.persistence.*;
 /**
  * 用户类实体类
  * 
- * @author 杨赟
  */
 @Entity
 public class User {

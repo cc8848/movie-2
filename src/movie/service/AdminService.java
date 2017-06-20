@@ -11,7 +11,6 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * 管理类Service
  * 
- * @author 杨赟
  */
 @Service
 @Transactional
