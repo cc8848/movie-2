@@ -27,6 +27,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	.works .prize li{
 		display:block;
 	}
+	.actorimg img{height:300px;width:250px;}
 </style>
 </head>
 
@@ -99,10 +100,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     	
                     </ul>
                 </div>
-            </div>
 		</section>
 		<aside class="col-xs-3">
-       		<div><img src="images/actor/<struts:property value='actor.id' />.jpg" /></div>
+       		<div class="actorimg"><img src="images/actor/<struts:property value='actor.id' />.jpg" /></div>
 		</aside>
 	</main>
 	<footer class="row">
